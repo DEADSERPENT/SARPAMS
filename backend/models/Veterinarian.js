@@ -37,7 +37,7 @@ const Veterinarian = sequelize.define('Veterinarian', {
   tableName: 'veterinarian',
   underscored: false,
   timestamps: true,
-  createdAt: 'createdAt',
+  createdAt: 'created_at',
   updatedAt: false
 });
 

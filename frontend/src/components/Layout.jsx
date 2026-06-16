@@ -1,9 +1,9 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import {
   LayoutDashboard, PawPrint, Grid3X3, Building2,
   ShieldCheck, Siren, Stethoscope, FileHeart,
-  Home, ArrowLeftRight, Users, HeartHandshake
+  Home, ArrowLeftRight, Users, HeartHandshake, LogOut
 } from 'lucide-react';
 
 const navItems = [
@@ -23,6 +23,12 @@ const navItems = [
 
 export default function Layout({ children }) {
   const location = useLocation();
+  const navigate = useNavigate();
+
+  function handleLogout() {
+    localStorage.removeItem('token');
+    navigate('/login');
+  }
 
   const pageTitles = {
     '/': 'Dashboard',
@@ -79,6 +85,10 @@ export default function Layout({ children }) {
           <span className="topbar-title">{currentTitle}</span>
           <div className="topbar-right">
             <span className="topbar-badge">SARPAMS v2.0</span>
+            <button className="logout-btn" onClick={handleLogout} title="Sign out">
+              <LogOut size={16} />
+              <span>Sign out</span>
+            </button>
           </div>
         </header>
         <main className="page-content">

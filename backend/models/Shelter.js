@@ -36,7 +36,7 @@ const Shelter = sequelize.define('Shelter', {
   tableName: 'shelter',
   underscored: false,
   timestamps: true,
-  createdAt: 'createdAt',
+  createdAt: 'created_at',
   updatedAt: false
 });
 

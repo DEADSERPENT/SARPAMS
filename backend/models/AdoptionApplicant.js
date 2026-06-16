@@ -51,7 +51,7 @@ const AdoptionApplicant = sequelize.define('AdoptionApplicant', {
   tableName: 'adoption_applicant',
   underscored: false,
   timestamps: true,
-  createdAt: 'createdAt',
+  createdAt: 'created_at',
   updatedAt: false
 });
 

@@ -45,7 +45,7 @@ const Rescuer = sequelize.define('Rescuer', {
   tableName: 'rescuer',
   underscored: false,
   timestamps: true,
-  createdAt: 'createdAt',
+  createdAt: 'created_at',
   updatedAt: false
 });
 

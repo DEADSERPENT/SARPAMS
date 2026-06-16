@@ -47,7 +47,7 @@ const FosterFamily = sequelize.define('FosterFamily', {
   tableName: 'foster_family',
   underscored: false,
   timestamps: true,
-  createdAt: 'createdAt',
+  createdAt: 'created_at',
   updatedAt: false
 });
 

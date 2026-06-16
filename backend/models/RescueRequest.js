@@ -54,7 +54,7 @@ const RescueRequest = sequelize.define('RescueRequest', {
   tableName: 'rescue_request',
   underscored: false,
   timestamps: true,
-  createdAt: 'createdAt',
+  createdAt: 'created_at',
   updatedAt: false
 });
 

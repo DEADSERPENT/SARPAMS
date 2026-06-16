@@ -37,7 +37,7 @@ const FosterPlacement = sequelize.define('FosterPlacement', {
   tableName: 'foster_placement',
   underscored: false,
   timestamps: true,
-  createdAt: 'createdAt',
+  createdAt: 'created_at',
   updatedAt: false
 });
 

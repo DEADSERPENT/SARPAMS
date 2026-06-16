@@ -23,13 +23,13 @@ const getDashboard = async (req, res) => {
     ]);
 
     const recentAnimals = await Animal.findAll({
-      order: [['createdAt', 'DESC']],
+      order: [['created_at', 'DESC']],
       limit: 5,
       include: [{ model: Cage, include: [{ model: Shelter }] }]
     });
 
     const recentRescues = await RescueRequest.findAll({
-      order: [['createdAt', 'DESC']],
+      order: [['created_at', 'DESC']],
       limit: 5,
       include: [
         { model: Rescuer, required: false },

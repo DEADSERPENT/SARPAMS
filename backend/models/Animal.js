@@ -65,7 +65,7 @@ const Animal = sequelize.define('Animal', {
   tableName: 'animal',
   underscored: false,
   timestamps: true,
-  createdAt: 'createdAt',
+  createdAt: 'created_at',
   updatedAt: false
 });
 

@@ -45,7 +45,7 @@ const MedicalRecord = sequelize.define('MedicalRecord', {
   tableName: 'medical_record',
   underscored: false,
   timestamps: true,
-  createdAt: 'createdAt',
+  createdAt: 'created_at',
   updatedAt: false
 });
 
